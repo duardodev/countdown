@@ -14,34 +14,43 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: #fff;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.container {
+main {
+  height: 100vh;
   display: flex;
-  column-gap: 7rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.img-background {
+.background-div > img {
   width: 100%;
 }
 
+.container {
+  margin-bottom: 2.3rem;
+  display: flex;
+  column-gap: 8rem;
+}
+
 .countdown-container {
-  margin-left: 7rem;
+  margin-left: 8rem;
   width: 505px;
 }
 
-.countdown-container h1 {
+.countdown-container .title {
   font-size: 2.25rem;
   font-weight: bold;
   color: var(--purple);
   letter-spacing: 5px;
 }
 
-.countdown-timer {
+.countdown {
   margin-top: 1.18rem;
   display: flex;
   column-gap: 3.3rem;
@@ -54,7 +63,7 @@ body {
   align-items: center;
 }
 
-.title {
+.time-title {
   font-size: 0.8rem;
   font-weight: 300;
   color: var(--light-grey);
@@ -78,22 +87,21 @@ body {
   content:''
 }
 
-.subtitle-input {
+.input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-div .text {
   margin-top: 1rem;
   margin-bottom: 1.8rem;
-  display: flex;
-  justify-content: center;
   font-size: 0.875rem;
   font-weight: 400;
   color: var(--text-color);
 }
 
-.div-input {
-  display: flex;
-  justify-content: center;
-}
-
-.div-input .btn {
+.input-div .btn {
   background: var(--purple);
   color: #fff;
   font-size: 16px;
@@ -103,10 +111,14 @@ body {
   outline: 0;
   border-radius: 10px;
   cursor: pointer;
-  margin-bottom: 2.3rem;
+  padding: 0 2rem;
 }
 
-.rocket {
+.rocket-div {
+  position: relative;
+}
+
+.rocket-img {
   position: absolute;
   width: 550px;
 }
