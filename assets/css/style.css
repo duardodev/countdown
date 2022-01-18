@@ -16,9 +16,6 @@ body {
   background: #fff;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 main {
@@ -28,7 +25,7 @@ main {
   justify-content: space-between;
 }
 
-.background-div > img {
+.background-div img {
   width: 100%;
 }
 
@@ -40,20 +37,20 @@ main {
 
 .countdown-container {
   margin-left: 8rem;
-  width: 505px;
 }
 
 .countdown-container .title {
   font-size: 2.25rem;
   font-weight: bold;
   color: var(--purple);
-  letter-spacing: 5px;
+  letter-spacing: 5.5px;
+  text-transform: uppercase;
 }
 
 .countdown {
   margin-top: 1.18rem;
   display: flex;
-  column-gap: 3.3rem;
+  column-gap: 4rem;
 }
 
 .time {
@@ -70,6 +67,7 @@ main {
 }
 
 .time-number {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   font-size: 4.3rem;
   font-weight: 400;
@@ -94,8 +92,7 @@ main {
 }
 
 .input-div .text {
-  margin-top: 1rem;
-  margin-bottom: 1.8rem;
+  margin: 1.8rem 0;
   font-size: 0.875rem;
   font-weight: 400;
   color: var(--text-color);
@@ -120,11 +117,7 @@ main {
   opacity: 0.7;
 }
 
-.rocket-div {
-  position: relative;
-}
-
-.rocket-img {
+.rocket-div img {
   position: absolute;
   width: 550px;
 }
