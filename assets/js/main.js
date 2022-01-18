@@ -1,3 +1,4 @@
+// Countdown
 const daysElement = document.getElementById("days");
 const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
@@ -81,3 +82,35 @@ function countdown() {
 }
 
 countdown();
+
+// Modal
+function showModal() {
+  (async () => {
+    const { value: email } = await Swal.fire({
+      title: 'Inscreva-se',
+      input: 'email',
+      inputPlaceholder: 'Insira o seu endereço email',
+      confirmButtonText: 'Enviar'
+    })
+    
+    if (email) {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Inscrição concluída!'
+      })
+    }
+    
+    })()
+}
