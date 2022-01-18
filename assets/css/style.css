@@ -104,7 +104,8 @@ main {
 .input-div .btn {
   background: var(--purple);
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 500;
   width: 160px;
   height: 45px;
   border: 0;
@@ -112,6 +113,11 @@ main {
   border-radius: 10px;
   cursor: pointer;
   padding: 0 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-div .btn:hover {
+  opacity: 0.7;
 }
 
 .rocket-div {
