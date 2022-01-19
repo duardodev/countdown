@@ -111,6 +111,5 @@ function showModal() {
         title: 'Inscrição concluída!'
       })
     }
-    
-    })()
+  })()
 }
