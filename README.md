@@ -4,7 +4,7 @@
 
 ![Resultado final do projeto](assets/img/preview.png)
 
-<h4 align="center"><a href="https://countdown-mrxcoding.vercel.app">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://countdown-sampaiocode.vercel.app">Clique para visitar o projeto</a></h4>
 
 ---
 
